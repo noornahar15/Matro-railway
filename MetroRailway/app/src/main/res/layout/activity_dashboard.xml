@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.theme.Dashboard"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nevi_blue"
+        app:title="Metro Railway"
+        app:titleTextColor="@color/yellow"
+        android:paddingStart="20dp"
+        tools:ignore="RtlSymmetry">
+
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/sky">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="20dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/gridview"
+                    android:layout_weight="0.2"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:elevation="20dp"
+                    android:horizontalSpacing="20dp"
+                    android:padding="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/orange"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/locationGView"
+                    android:layout_weight="0.2"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:elevation="20dp"
+                    android:horizontalSpacing="20dp"
+                    android:numColumns="auto_fit"
+                    android:padding="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/orange"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="20dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/nameGView"
+                    android:layout_weight="0.2"
+                    android:layout_margin="10dp"
+                    android:elevation="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dp"
+                    android:numColumns="auto_fit"
+                    android:padding="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/orange"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutGView"
+                    android:layout_weight="0.2"
+                    android:layout_margin="10dp"
+                    android:elevation="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dp"
+                    android:padding="12dp"
+                    android:background="@color/orange"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
